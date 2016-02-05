@@ -1,0 +1,35 @@
+/*
+START Main configuration values
+*/
+
+@padding-size: 20px;
+
+/*
+END Main configuration values
+*/
+
+// give us a background colour when we aren't running in CasparCG
+body.not-casparcg {
+  background: black;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+#countdown .timer {
+  background: #3cb8ff;
+  border: 1px solid #000000;
+  padding: (@padding-size / 2) @padding-size;
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+.vertical-align {
+  display: block;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
