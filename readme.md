@@ -22,7 +22,7 @@ countdown_timer
 
 ## Themes
 
-Theme support is available. To make a new theme, duplicate an existing theme (e.g. "base") from the ./src/themes directory
+Theme support is available. To make a new theme, duplicate an existing theme (e.g. "base") from the `./src/themes` directory and then make any required adjustments. Most likely you'll be wanting to edit `./src/themes/<theme_name>/css/styles.less` to edit the font size, add a background image etc.
 
 - base
     - css `any css/less files in this directory will be merged into ./casparcg_output/css/main.css`
