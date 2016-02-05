@@ -6,7 +6,6 @@ var less = require('gulp-less');
 var watch = require('gulp-watch');
 var path = require('path');
 var glob = require('glob');
-var gulpIf = require('gulp-if');
 var gulpUtil = require('gulp-util');
 var replace = require('gulp-replace');
 var concat = require('gulp-concat');
