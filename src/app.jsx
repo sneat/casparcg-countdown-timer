@@ -41,7 +41,11 @@ class App extends React.Component {
             }
             if (partialState.hideOnEnd) {
                 // Make sure we are true/false
-                partialState.hideOnEnd = (partialState.hideOnEnd.toLowerCase() === 'true' && partialState.hideOnEnd.toLowerCase() !== 'false' && !!partialState.hideOnEnd);
+                if (typeof partialState.hideOnEnd === 'string') {
+                    partialState.hideOnEnd = (partialState.hideOnEnd.toLowerCase() === 'true' && partialState.hideOnEnd.toLowerCase() !== 'false' && !!partialState.hideOnEnd);
+                } else {
+                    partialState.hideOnEnd = !!partialState.hideOnEnd;
+                }
             }
 
             if (Object.keys(partialState).length) {

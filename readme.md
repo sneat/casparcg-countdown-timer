@@ -32,11 +32,14 @@ Theme support is available. To make a new theme, duplicate an existing theme (e.
     - lib.json `Use this file to list any additional third-party libraries that you want to include. They will be copied as is into the appropriate build directory.`
     - * `any other folder will be copied into ./casparcg_output`
 
-
 ## CasparCG Client Settings
 
 Times should be passed through using either the `f0` or `time` key as number of seconds, or using the "HH:MM:SS" or "MM:SS" format.
 
+By default the template will hide itself at the end of the countdown, you can pass through `0` or `false` to the `f1` or `hideOnEnd` key to keep the template visible.
+
 ![](template_settings.png?raw=true)
 
-By default the template will hide itself at the end of the countdown, you can pass through `0` or `false` to the `f1` or `hideOnEnd` key to keep the template visible.
+## Debugging and Creating a New Theme
+
+While the primary purpose of the countdown-timer is for use with [CasparCG](http://www.casparcg.com/), you don't need to copy the changes to a CasparCG server each time you adjust a theme. You can view your changes by simply opening the *compiled* source (`./casparcg_output/countdown_timer.html`) in a modern browser (e.g. Chrome - since CasparCG is built on an old Chrome version).
